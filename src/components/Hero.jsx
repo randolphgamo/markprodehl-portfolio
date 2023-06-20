@@ -18,8 +18,10 @@ const Hero = () => {
             Hi, my name is <span className='text-[#915EFF]'>Mark</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop full stack web applictions, 3D visuals, as well as <br className='sm:block hidden' />
-            backend and front end user interfaces
+            I specialize in the development of comprehensive Full Stack web applications, 
+            creating stunning visuals, and crafting intuitive user interfaces for 
+            both front-end and back-end systems. My expertise spans across the entire 
+            spectrum of application development, assuring seamless integration and performance.
           </p>
         </div>
       </div>

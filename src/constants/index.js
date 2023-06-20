@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    jmj,
+    aquatic,
   } from "../assets";
   
   export const navLinks = [
@@ -116,55 +118,32 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer",
+      company_name: "JMJ Financial",
+      icon: jmj,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "December 2020 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Working on both back end and front end repositories, executing strong functionality to meticulously gather, validate, and store data, then present it visually with easy-to-read tables and graphs.",
+        "Collaborating with designers and the engineering team to build dynamic and responsive user interfaces deployed on AWS in React using JavaScript, TypeScript, HTML, and modern CSS standards.",
+        "Developing server-side tools and services built with Ruby on Rails and a PostgreSQL database",
+        "Implementing multiple third-party API integrations like Equifax, Dropbox Sign, and Encompass.",
+        "Conducting regular maintenance of the software stack by leveraging Sentry to monitor and fix bugs in real time as well as optimize the performance of the newly deployed web application",
+        "Reviewing pull requestes, providing comprehensive feedback and suggestions to ensure code quality and adherence to best practices."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "General Manager",
+      company_name: "Aquatic Aviation",
+      icon: aquatic,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2015 - Feb 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Managing a multi-facet business operation including WordPress and Shopify websites, SEO, client/distributor relationships, accounting, operations, staff, and client training.",
+        "Implementing business strategies tailored to meet niche client needs making the company the best performing Flyboard, Hoverboard, and Jetpack product sales and training center in the United States.",
+        "Maximizing profitability through proactive management and monitoring of margins and price setting.",
+        "Instilling a company ethos focused on product quality and outstanding customer service, achieving perfect 5-star reviews across all major platforms including, Google, Yelp, Tripadvisor, and Groupon.",
+        "Certified Master Instructor that meticulously trained and certified all Instructor staff achieving a 100% safety record across all experiences between 2015 - 2020."
       ],
     },
   ];

@@ -11,6 +11,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      //Update the card styles
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
@@ -19,6 +20,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
+        // Update the card color and styles
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
@@ -39,7 +41,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
@@ -47,11 +49,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled full stack engineer with experience in Javascript, Typescript, and Ruby,
-        and expertise in frameworks like React, Node.js, and Ruby on Rails. 
-        I'm a quick learner and strong colaborator thats self-driven and open minded. I work 
-        best in an agile team adept at using version control to build scalable, user friendly 
-        production web applications that solve real world problems.
+        I am a proficient Full Stack Engineer, boasting expertise in JavaScript, TypeScript, 
+        and Ruby programming languages. My specialized skill set extends to using frameworks 
+        such as React, Node.js, and Ruby on Rails. I am recognized for being a quick learner 
+        and an effective collaborator, with a strong drive and open-minded approach that allows 
+        me to adapt to changing environments. I thrive in agile team settings where I can 
+        apply my adeptness in version control to develop scalable, user-friendly web applications. 
+        I am passionate about leveraging my skills to solve real-world problems, consistently 
+        delivering solutions that address user needs effectively.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
