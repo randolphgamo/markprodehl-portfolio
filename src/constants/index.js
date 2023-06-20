@@ -25,6 +25,12 @@ import {
     threejs,
     jmj,
     aquatic,
+    ruby,
+    postgresql,
+    githubicon,
+    postman,
+    jquery,
+    firebase,
   } from "../assets";
   
   export const navLinks = [
@@ -63,12 +69,8 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "JavaScript",
@@ -79,41 +81,61 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "HTML 5",
+      icon: html,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "CSS 3",
+      icon: css,
     },
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "Ruby on Rails",
+      icon: ruby,
     },
+    {
+      name: "Firebase",
+      icon: firebase,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "PostgreSQL",
+      icon: postgresql,
+    },
+    {
+      name: "GitHub",
+      icon: githubicon,
+    },
+    {
+      name: "Postman",
+      icon: postman,
+    },
+    // {
+    //   name: "JQuery",
+    //   icon: jquery,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
@@ -126,9 +148,9 @@ import {
       points: [
         "Working on both back end and front end repositories, executing strong functionality to meticulously gather, validate, and store data, then present it visually with easy-to-read tables and graphs.",
         "Collaborating with designers and the engineering team to build dynamic and responsive user interfaces deployed on AWS in React using JavaScript, TypeScript, HTML, and modern CSS standards.",
-        "Developing server-side tools and services built with Ruby on Rails and a PostgreSQL database",
+        "Developing server-side tools and services built with Ruby on Rails and a PostgreSQL database.",
         "Implementing multiple third-party API integrations like Equifax, Dropbox Sign, and Encompass.",
-        "Conducting regular maintenance of the software stack by leveraging Sentry to monitor and fix bugs in real time as well as optimize the performance of the newly deployed web application",
+        "Conducting regular maintenance of the software stack by leveraging Sentry to monitor and fix bugs in real time as well as optimize the performance of the newly deployed web application.",
         "Reviewing pull requestes, providing comprehensive feedback and suggestions to ensure code quality and adherence to best practices."
       ],
     },

@@ -20,11 +20,19 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import ruby from "./tech/ruby.png";
+import postgresql from "./tech/postgresql.png";
+import githubicon from "./tech/githubicon.png";
+import postman from "./tech/postman.png";
+import jquery from "./tech/jquery.png";
+import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import jmj from "./company/jmj.png";
+import aquatic from "./company/aquatic.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -59,4 +67,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  jmj,
+  aquatic, 
+  ruby,
+  postgresql,
+  githubicon,
+  postman,
+  jquery,
+  firebase,
 };
