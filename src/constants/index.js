@@ -31,6 +31,9 @@ import {
     postman,
     jquery,
     firebase,
+    chatai,
+    link,
+    chalkboard,
   } from "../assets";
   
   export const navLinks = [
@@ -199,9 +202,71 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Chat AI",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "ChatAI is an application developed using React and Vite. It uses Firebase Firestore for data storage and Google Authentication for user identification. This application is hosted on Google hosting. The application interacts with OpenAI's GPT-3 model for creating conversational agents.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase-realtime-db",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vite",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "google-auth",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "open-ai",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: chatai,
+      projectLink: link,
+      source_code_link: "https://github.com/markprodehl/chat-ai",
+      deployed_app_link: "https://chat-ai-c95f1.web.app/",
+    },
+    {
+      name: "Chalk Board",
+      description:
+        "ChatAI is an application developed using React and Vite. It uses Firebase Firestore for data storage and Google Authentication for user identification. This application is hosted on Google hosting. The application interacts with OpenAI's GPT-3 model for creating conversational agents.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase realtime db",
+          color: "green-text-gradient",
+        },
+        {
+          name: "vite",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "google-auth",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "open-ai",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: chalkboard,
+      projectLink: link,
+      source_code_link: "https://github.com/markprodehl/chalk-board",
+      deployed_app_link: "https://golden-to-do-list-462c7.web.app/",
+    },
+    {
+      name: "Chat AI",
+      description:
+        "ChatAI is an application developed using React and Vite. It uses Firebase Firestore for data storage and Google Authentication for user identification. This application is hosted on Google hosting. The application interacts with OpenAI's GPT-3 model for creating conversational agents.",
       tags: [
         {
           name: "react",
@@ -215,52 +280,62 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "google-auth",
+          color: "yellow-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "open-ai",
+          color: "orange-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: chatai,
+      projectLink: link,
+      source_code_link: "https://github.com/markprodehl/chat-ai",
+      deployed_app_link: "https://chat-ai-c95f1.web.app/",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Job IT",
+    //   description:
+    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "restapi",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "scss",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: jobit,
+    //   source_code_link: "https://github.com/",
+    // },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
