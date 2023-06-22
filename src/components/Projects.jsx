@@ -26,7 +26,7 @@ const ProjectCard = ({
           speed: 450,
         }}
         // className='p-5 rounded-2xl sm:w-[360px] w-full'
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:bg-indigo-950'
       >
         <div className='relative w-full h-[230px]'>
           <img

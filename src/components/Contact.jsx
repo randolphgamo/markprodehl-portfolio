@@ -21,10 +21,7 @@ const Contact = () => {
     const { target } = e;
     const { name, value } = target;
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
+    setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -37,9 +34,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mark",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "markprodehl@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,7 +44,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you for your interest in my services. Your inquiry has been received and I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -59,7 +56,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Oops, something went wrong. Can you please try one more time and if you have further issues kindly reach out to me via LinkedIn, 'https://www.linkedin.com/in/mark-software-engineer/' .");
         }
       );
   };
@@ -118,7 +115,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-indigo-950'
           >
             {loading ? "Sending..." : "Send"}
           </button>

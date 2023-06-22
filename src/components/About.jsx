@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => (
           speed: 450,
         }}
         // Update the card color and styles
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col hover:bg-indigo-950'
       >
         <img
           src={icon}
