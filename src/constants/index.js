@@ -46,6 +46,10 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects"
+    },
+    {
       id: "contact",
       title: "Contact",
     },
@@ -72,7 +76,7 @@ import {
   
   const technologies = [
     {
-      name: "React JS",
+      name: "React",
       icon: reactjs,
     },
     {
@@ -92,7 +96,7 @@ import {
       icon: css,
     },
     {
-      name: "Node JS",
+      name: "Node",
       icon: nodejs,
     },
     {
@@ -100,7 +104,7 @@ import {
       icon: git,
     },
     {
-      name: "Tailwind CSS",
+      name: "Tailwind",
       icon: tailwind,
     },
     {
