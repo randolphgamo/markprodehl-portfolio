@@ -8,20 +8,26 @@ const Computers = ({ isMobile }) => {
   const [scale, setScale] = useState(1);
   const [position, setPosition] = useState([]);
 
-  // This updates the scale and position based on the window width
+  // Optimize the scale and position of the computerCanvas according to screen size
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
 
-      if (width <= 500) {
-        setScale(.7);
-        setPosition([0, 0.1, -1.1]);
+      if (width <= 480) {
+        setScale(.25);
+        setPosition([0, 0.1, -0.4]);
+      } else if (width <= 600) {
+        setScale(0.35);
+        setPosition([0, -0.3, -0.55]);
       } else if (width <= 768) {
         setScale(0.35);
-        setPosition([0, 0.1, -0.55]);
+        setPosition([0, -0.35, -0.55]);
+      } else if (width <= 900) {
+        setScale(0.42);
+        setPosition([0, -0.45, -0.55]);
       } else if (width <= 1024) {
-        setScale(0.45);
-        setPosition([0, -0.56, -0.75]);
+        setScale(0.48);
+        setPosition([0, -0.8, -0.75]);
       } else {
         setScale(0.55);
         setPosition([0, -1, -0.9]);
@@ -92,7 +98,10 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 12 }}
+      // After adding the handleSize useEffect to manage media queries the isMobile state might not be neccessary anymore. 
+      // Keeping the setting for now
+      // camera={{ position: [20, 3, 5], fov: isMobile ? 12 : 12 }}
+      camera={{ position: [20, 3, 5], fov: 12 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
