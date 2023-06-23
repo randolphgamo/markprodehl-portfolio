@@ -5,6 +5,40 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  const [scale, setScale] = useState(1);
+  const [position, setPosition] = useState([]);
+
+  // This updates the scale and position based on the window width
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width <= 500) {
+        setScale(.7);
+        setPosition([0, 0.1, -1.1]);
+      } else if (width <= 768) {
+        setScale(0.35);
+        setPosition([0, 0.1, -0.55]);
+      } else if (width <= 1024) {
+        setScale(0.45);
+        setPosition([0, -0.56, -0.75]);
+      } else {
+        setScale(0.55);
+        setPosition([0, -1, -0.9]);
+      }
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Update on resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <mesh>
@@ -20,8 +54,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.6 : 0.55}
-        position={isMobile ? [0, -4, -2] : [0, -2.5, -1.25]}
+        scale={scale}
+        position={position}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -58,7 +92,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 20 }}
+      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 12 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
