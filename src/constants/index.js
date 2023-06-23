@@ -100,7 +100,7 @@ import {
       icon: nodejs,
     },
     {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {
