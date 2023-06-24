@@ -2,6 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import computer from "../../assets/computer.png";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -94,27 +95,35 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      // After adding the handleSize useEffect to manage media queries the isMobile state might not be neccessary anymore. 
-      // Keeping the setting for now
-      // camera={{ position: [20, 3, 5], fov: isMobile ? 12 : 12 }}
-      camera={{ position: [20, 3, 5], fov: 12 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+    <>
+      {/* Displays a static image on mobile to prevent rendering issues on older devices */}
+      { isMobile ? 
+        <img src={computer} alt="Description of Image" />  : 
+        <Canvas
+          frameloop='demand'
+          shadows
+          dpr={[1, 2]}
+          // After adding the handleSize useEffect to manage media queries the isMobile state might not be neccessary anymore. 
+          // Keeping the setting for now
+          // camera={{ position: [20, 3, 5], fov: isMobile ? 12 : 12 }}
+          camera={{ position: [20, 3, 5], fov: 12 }}
+          gl={{ preserveDrawingBuffer: true }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Computers isMobile={isMobile} />
+          </Suspense>
 
-      <Preload all />
-    </Canvas>
+          <Preload all />
+        </Canvas>
+      }
+    
+    </>
+ 
   );
 };
 
