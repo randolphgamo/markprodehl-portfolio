@@ -53,9 +53,7 @@ const Hero = () => {
             both front-end and back-end systems. My expertise spans across the entire 
             spectrum of application development, assuring seamless integration and performance.
           </p>
-          {/* <div className='canvas-container'> */}
-          <div className={`${isMobile ? "mobile-canvas-container" : "canvas-container"}`}>
-            {/* The ComputerCanvas conditionally render the 3D or static image based on the state of isMobile */}
+          <div>
             <ComputersCanvas />
           </div>
         </div>
