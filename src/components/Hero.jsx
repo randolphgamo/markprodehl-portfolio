@@ -54,7 +54,17 @@ const Hero = () => {
             spectrum of application development, assuring seamless integration and performance.
           </p>
           <div>
-            <ComputersCanvas />
+            { isMobile ? 
+              <motion.div
+                initial={{ x: -9, scale: 0 }} // start from 50 pixels left and no size
+                animate={{ x: -9, scale: 1.18 }} // animate to original position and full size
+                transition={{ duration: 2 }} // animation duration is 1 second
+              >
+                <ComputersCanvas />
+              </motion.div>
+              :
+              <ComputersCanvas />
+            }
           </div>
         </div>
       </div>
