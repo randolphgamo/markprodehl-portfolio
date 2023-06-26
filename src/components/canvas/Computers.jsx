@@ -99,7 +99,7 @@ const ComputersCanvas = () => {
       {/* Displays a static image on mobile to prevent rendering issues on older devices */}
       { isMobile ? 
         <div className="mobile-canvas-container">
-          <img src={computer} alt="Description of Image" /> 
+          <img src={computer} alt="Static image of computer" /> 
         </div>
         :
         <div className="canvas-container">
