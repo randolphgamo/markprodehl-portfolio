@@ -9,24 +9,38 @@ import close from "./close.svg";
 import link from "./link.png";
 
 import css from "./tech/css.png";
+import css1 from "./tech/css1.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
+import git1 from "./tech/git1.png";
 import html from "./tech/html.png";
+import html1 from "./tech/html1.png";
 import javascript from "./tech/javascript.png";
+import javascript1 from "./tech/javascript1.png";
 import mongodb from "./tech/mongodb.png";
+import mongodb1 from "./tech/mongodb1.png";
 import nodejs from "./tech/nodejs.png";
+import nodejs1 from "./tech/nodejs1.png";
 import reactjs from "./tech/reactjs.png";
+import reactjs1 from "./tech/reactjs1.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
+import tailwind1 from "./tech/tailwind1.png";
 import typescript from "./tech/typescript.png";
+import typescript1 from "./tech/typescript1.png";
 import threejs from "./tech/threejs.svg";
 import ruby from "./tech/ruby.png";
+import ruby1 from "./tech/ruby1.png";
 import postgresql from "./tech/postgresql.png";
+import postgresql1 from "./tech/postgresql1.png";
 import githubicon from "./tech/githubicon.png";
+import githubicon1 from "./tech/githubicon1.png";
 import postman from "./tech/postman.png";
+import postman1 from "./tech/postman1.png";
 import jquery from "./tech/jquery.png";
 import firebase from "./tech/firebase.png";
+import firebase1 from "./tech/firebase1.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -51,17 +65,26 @@ export {
   menu,
   close,
   css,
+  css1,
   docker,
   figma,
   git,
+  git1,
   html,
+  html1,
   javascript,
+  javascript1,
   mongodb,
+  mongodb1,
   nodejs,
+  nodejs1,
   reactjs,
+  reactjs1,
   redux,
   tailwind,
+  tailwind1,
   typescript,
+  typescript1,
   threejs,
   meta,
   shopify,
@@ -73,12 +96,18 @@ export {
   jmj,
   aquatic, 
   ruby,
+  ruby1,
   postgresql,
+  postgresql1,
   githubicon,
+  githubicon1,
   postman,
+  postman1,
   jquery,
   firebase,
+  firebase1,
   chatai,
   link,
   chalkboard,
+
 };
